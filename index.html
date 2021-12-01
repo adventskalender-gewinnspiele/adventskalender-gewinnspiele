@@ -83,6 +83,7 @@ var calendars = [
 "https://www.theater-heilbronn.de/theater/adventskalender.php",
 "https://www.ao.de/life/adventskalender"+yyyy
 ];
+var div = document.createElement('div');
 print(calendars);
 
 document.write('<br><h4>Aufgaben/Zeitaufwändig</h4><br>');
@@ -101,14 +102,20 @@ var etc = [
 ]
 print(etc);
 
-
 function print(p){
     for(var i=0; i<p.length; i++) {
-        document.write('<a href="' + p[i] + '">' + p[i] + '</a><br><br>');
+        document.write('<a href="' + p[i] + '" onclick="hide(\'' + p[i] + '\');">' + p[i] + '</a><br><br>');
+        //document.write('<a href="#" onclick="hide();">test</a>');
+        //document.write("<a href='#' onclick='hide(" + l + ");'>test</a>");
+        //document.write('<a href="' + p[i] + '">' + p[i] + '</a><br><br>');
     }
 }
 
-midnight_cookie_page_clicked("test",1337)
+function hide(p) {   
+    midnight_cookie_page_clicked(p,dd)
+}
+
+//midnight_cookie_page_clicked("test",1337)
 
 function midnight_cookie_page_clicked(name, value)
 {
@@ -122,6 +129,9 @@ function midnight_cookie_page_clicked(name, value)
   document.cookie = name+"="+value+"; expires=" + expire.toString() +"; path=/";
 }
 
-document.cookie = "username=John Doe";
+//document.cookie = "username=John Doe";
 document.write(document.cookie);
+
+
+
 </script>
