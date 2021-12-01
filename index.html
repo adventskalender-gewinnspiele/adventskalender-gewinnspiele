@@ -104,16 +104,21 @@ print(etc);
 
 function print(p){
     for(var i=0; i<p.length; i++) {
-        document.write('<a href="' + p[i] + '" onclick="hide(\'' + p[i] + '\');">' + p[i] + '</a><br><br>');
+        document.write('<a href="' + p[i] + '" onclick="return hide_left(\'' + p[i] + '\');" onauxclick="hide_middle(\'' + p[i] + '\');">' + p[i] + '</a><br><br>');
         //document.write('<a href="#" onclick="hide();">test</a>');
         //document.write("<a href='#' onclick='hide(" + l + ");'>test</a>");
         //document.write('<a href="' + p[i] + '">' + p[i] + '</a><br><br>');
     }
 }
 
-function hide(p) {   
-    alert(p);
-    midnight_cookie_page_clicked("hallo","welt")
+function hide_left(p) {  
+    window.open(p,'_blank');
+    midnight_cookie_page_clicked("left","click")
+    return false;
+}
+
+function hide_middle(p) {  
+    midnight_cookie_page_clicked("middle","click")
 }
 
 //midnight_cookie_page_clicked("test",1337)
