@@ -50,9 +50,7 @@ var calendars = [
 "https://www.appgefahren.de/?s=adventskalender", //down quiz
 "https://www.ingame.de/join/adventskalender/", //down quiz leicht
 "https://www.antenne.de/programm/aktionen/adventskalender-"+yyyy+"/tuerchen-"+dd, //nach oben wegen Zeitlimitierung
-"https://www.mindfactory.de/Highlights/Adventskalender+"yyyy"+#+"dd, //runter wegen Shop-ID
 "https://www.teltarif.de/adventskalender/", //down kA geht das überhaupt?
-"https://www.krebsgesellschaft.de/onko-internetportal/aktuelle-themen/adventskalender/tuerchen-"+dd"+.html", //runter E-Mail-Quiz
 "https://www.merkur.de/lokales/freising/adventskalender/", //runter schweres Quiz
 "https://www.kribbelbunt.de/kribbelbuntes/adventskalender/", //eventuell /tuer-"+dd
 "https://www.one.de/tuer"+dd,
@@ -62,8 +60,6 @@ var calendars = [
 "https://www.blauer-engel.de/de/adventskalender", //down
 "https://toom.de/aktionen/toom-adventskalender", //down
 "https://www.funke.fun/gewinnspiele/hoerzu/adventskalender", //down Puzzle
-"https://www.toggoeltern.de/toggolino-adventskalender-tag-"+dd",
-"https://www.toggo.de/spiel/toggo-adventskalender", //down zeitaufwändig?
 "https://www.handyhase.de/?s=adventskalender", //down quiz
 "https://www.facebook.com/berndes.de/",
 "https://t3n.de/adventskalender/"+yyyy+"-tag-"+dd,
@@ -101,6 +97,10 @@ var calendars = [
 "https://www.focus.de/shopping/adventskalender/",
 "https://www-staging.chip.de/events/deals-adventskalender",
 "https://interesse.telekom.de/adventskalender", //quiz mit Wartezeit..
+"https://www.toggoeltern.de/toggolino-adventskalender-tag-"+dd,
+"https://www.toggo.de/spiel/toggo-adventskalender", //down zeitaufwändig?
+"https://www.mindfactory.de/Highlights/Adventskalender"+yyyy+"#"+dd, //runter wegen Shop-ID
+"https://www.krebsgesellschaft.de/onko-internetportal/aktuelle-themen/adventskalender/tuerchen-"+dd+".html", //runter E-Mail-Quiz
 ];
 var div = document.createElement('div');
 print(calendars);
@@ -110,7 +110,6 @@ var tasks = [
 "https://adventskalender.sueddeutsche.de/",
 "https://www.adventure-treff.de/adventskalender2021",
 "https://holarse.de/search/node/Holarse%20Linuxspiele-Adventskalender%202021%20T%C3%BCrchen%20"+dd,
-
 ]
 print(tasks);
 
@@ -128,7 +127,6 @@ var etc = [
 "https://digitalcourage.de/adventskalender/"+dd,
 "https://qiita.com/advent-calendar/"+yyyy+"/linux",
 "https://adventofcode.com/",
-
 ]
 print(etc);
 
