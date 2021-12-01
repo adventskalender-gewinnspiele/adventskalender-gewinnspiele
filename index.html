@@ -9,96 +9,126 @@ document.write('<h2>Gewinnspiele</h2>');
 
 document.write('<br><h4>E-Mail/Ausfüllen</h4>');
 var calendars = [
-"https://www.nintendo.de/News/Adventskalender/2019/-16911"+eval(dd+15)+".html",
-"https://www.gamestar.de/kalender/xmas"+yyyy+",6/tag"+dd+".html#gewinnspiel",
-"http://www.tvmovie.de/adventskalender",
+"https://www.gamestar.de/kalender/xmas,"+eval(yy-13)+"/tag"+dd+".html",
 "http://www.buecher.de/go/special_gewinnspiel/adventskalender/",
-"https://playground.connect.de/#!Adventskalender"+yyyy,
-"https://www5.daserste.de/imagemap/index.php/218.html",
-"http://adventskalender.faz.net/ak/faz/#kalender",
-"http://www.selbst.de/aktuelles-news-artikel/adventskalender-weihnachten-mit-selbstde-153377.html",
-"https://www.bravo.de/adventskalender-"+yyyy+"-383811.html",
-"http://kalender.simbatoys.de/",
-"https://www.dealdoktor.de/gratisartikel-kostenlos/adventskalender-tuerchen-"+dd,
-"http://www.onlinepc.ch/adventskalender-823219.php",
-"https://www.vr-module.de/cgi-bin/Adventskalender?redirect=VR-NetWorld",
-"https://www.deskmodder.de/blog/tag/adventskalender-"+yyyy,
-"https://www.tech-review.de/include.php?path=content/articles.php&contentid=167347",
-"https://www.hardwareinside.de/weihnachtsgewinnspiel-2019-46060/",
-"http://www.menshealth.de/artikel/24-starke-gewinne-warten-hier-auf-sie.138987.html",
-"https://www.china-gadgets.de/adventskalender/",
+"https://playground.connect.de/adventskalender/", //Move down
+"http://adventskalender.faz.net/ak/faz/#kalender", //Move down heavily
+"http://www.selbst.de/aktuelles-news-artikel/adventskalender-weihnachten-mit-selbstde-153377.html", //Move down
+"http://kalender.simbatoys.de/", //Move down
+"https://www.dealdoktor.de/gratisartikel-kostenlos/adventskalender-tuerchen-"+dd, //Move down above FAZ QUIZ
+"https://www.deskmodder.de/blog/tag/adventskalender-"+yyyy, //down nutzlos
+"https://www.tech-review.de/intern-trv-weihnachtsgewinnspiel-2021.html",
+"https://www.hardwareinside.de/weihnachtsgewinnspiel-2019-46060/", //down wöchentlich
+"https://www.menshealth.de/adventskalender-tuerchen-"+dd, //down quiz
+"https://www.china-gadgets.de/?s=gewinnspiel", //down wöchtenlich?
 "http://guetezeichen-kerzen.com/de/startseite/adventskalender/",
-"https://www.autozeitung.de/adventskalender-195477.html#",
-"https://www.stimmt.de/news/specials/adventskalender"+yyyy,
-"http://weihnachten.tagesspiegel.de/adventskalender/",
-"https://www.4players.de/4players.php/gewinnspieldetail/Allgemein/57"+eval(dd+20),
-"http://www.brigitte.de/wohnen/weihnachten/adventskalender/",
-"http://www.pctipp.ch/adventskalender",
-"http://xmas.avm.de/de/",
-"https://basic-tutorials.de/tag/adventskalender-"+yyyy,
-"http://www.netzwelt.de/adventskalender-2016.html",
-"https://www.gq-magazin.de/gewinnspiele/portal/adventskalender",
-"https://www.aldiventskalender.de/",
-"http://www.elevator.de/xmas-verlosung/index/",
-"http://advent.eswe-versorgung.de/",
-"https://www.mmoga.de/adventskalender.html",
+"https://www.stimmt.de/news/specials/adventskalender_"+yyyy, //down
+"http://www.brigitte.de/wohnen/weihnachten/adventskalender/", //down puzzle!
+"https://www.pctipp.ch/pctipp-adventskalender-2021-2607950.html", //down
+"http://xmas.avm.de/de/", //down
+"https://basic-tutorials.de/tag/adventskalender-"+yyyy, //down
+"http://www.netzwelt.de/adventskalender-"+yyyy+".html", //down heavy twitter
+"https://www.gq-magazin.de/gewinnspiele/portal/adventskalender", //down
+"https://www.aldiventskalender.de/sued", //down
+"http://www.elevator.de/xmas-verlosung/index/", //down
+"http://advent.eswe-versorgung.de/", //down
+"https://www.mmoga.de/adventskalender.html", //wöchentlich
 "https://www.test.de/microsites/adventskalender/teilnehmen.htm",
-"https://www.computerbild.de/Adventskalender/",
-"https://adventskalender.specials-bahn.de/",
-"https://de.erwinmueller.com/adventskalender",
-"http://www.wunderweib.de/adventskalender-gewinnspiel",
-"https://www.lecker.de/adventskalender-76621.html",
-"https://www.edeka.de/gewinnspiele/aktuelle-gewinnspiele/adventskalender/tagespreise.jsp",
-"https://www.kaufland.de/aktionen/adventskalender.html",
-"http://www.arlt.com/gewinnspiel-aktion/",
-"https://www.unicum.de/de/aktuelles/gewinnspiele/der-unicum-adventskalender-2018",
+"https://www.computerbild.de/Adventskalender/", //down
+"https://de.erwinmueller.com/adventskalender", //down
+"https://www.lecker.de/adventskalender-76621.html", //down kA gewinnspiele sonst?
+"https://www.edeka.de/gewinnspiele/aktuelle-gewinnspiele/adventskalender/tagespreise.jsp", //down quiz
+"https://www.kaufland.de/aktionen/adventskalender.html", //down
+"http://www.arlt.com/gewinnspiel-aktion/", //down captcha komisch
+"https://www.unicum.de/de/aktuelles/gewinnspiele/der-unicum-adventskalender-"+yyyy, //down
 "https://www.facebook.com/autofit.de/",
-"https://www.facebook.com/gamestopzingde",
-"https://www.netto-online.de/aktion/weihnachten/adventskalender",
-"http://www.kinonews.de/index.php/gewinnspiele/index.php?option=com_chronoforms&chronoform=Gewinn-Neu-Advent17&event=submit",
-"https://www.jolie.de/gewinnspiele",
-"https://www.ad-magazin.de/article/advent"+yy+"-tuerchen-"+dd,
-"https://www.ajoure.de/gewinnspiele/adventskalender-verlosung-tag-"+dd,
-"http://www.ajoure-men.de/gewinnspiele/adventskalender-gewinnspiel-tag-"+dd,
-"https://meine.stimme.de/adventskalender/",
-"https://www.playcentral.de/spiel/gewinnspiel/id2972.html",
-"https://www.appgefahren.de/?s=kalender",
-"https://www.ingame.de/join/adventskalender/",
-"https://www.antenne.de/programm/aktionen/der-antenne-bayern-adventskalender-2018/",
-"https://www.mindfactory.de/Highlights/Adventskalender2018",
-"https://www.teltarif.de/adventskalender/",
-"https://www.krebsgesellschaft.de/onko-internetportal/aktuelle-themen/adventskalender-"+yyyy+"/tuerchen-"+dd,
-"https://www.merkur.de/lokales/freising/adventskalender/",
-"https://www.kribbelbunt.de/kribbelbuntes/adventskalender/",
-"https://www.adventskalender.hessen.de",
+"https://www.netto-online.de/Weihnachten#adventskalender", //down
+"https://www.jolie.de/gewinnspiele", //down
+"https://www.ad-magazin.de/tag/adventskalender", //down
+"https://www.ajoure.de/gewinnspiele/tag-"+dd+"-adventskalender-gewinnspiel/",
+"https://www.ajoure-men.de/gewinnspiele/tag-"+dd+"-adventskalender-gewinnspiel/",
+"https://www.appgefahren.de/?s=adventskalender", //down quiz
+"https://www.ingame.de/join/adventskalender/", //down quiz leicht
+"https://www.antenne.de/programm/aktionen/adventskalender-"+yyyy+"/tuerchen-"+dd, //nach oben wegen Zeitlimitierung
+"https://www.mindfactory.de/Highlights/Adventskalender+"yyyy"+#+"dd, //runter wegen Shop-ID
+"https://www.teltarif.de/adventskalender/", //down kA geht das überhaupt?
+"https://www.krebsgesellschaft.de/onko-internetportal/aktuelle-themen/adventskalender/tuerchen-"+dd"+.html", //runter E-Mail-Quiz
+"https://www.merkur.de/lokales/freising/adventskalender/", //runter schweres Quiz
+"https://www.kribbelbunt.de/kribbelbuntes/adventskalender/", //eventuell /tuer-"+dd
 "https://www.one.de/tuer"+dd,
-"https://mehr-o2-aktion.o2online.de/weihnachten"+yyyy,
-"https://aktion.vodafone.de/GigaXmas/vs",
-"https://community.adac.de/contest/weihnachtsaktion-"+yy,
+"https://www.o2online.de/priority/vorteile/adventskalender-"+yyyy, //down einmalig pro Tag
+"https://aktion.vodafone.de/GigaXmas/vs?custtype=new", //quiz
 "https://www.braut.de/adventskalender-"+yyyy+"-tuer-"+dd+"/2/",
-"https://www.sparkasse-heilbronn.de/de/home/aktionen/sparkassen-adventskalender.html",
-"https://www.blauer-engel.de/de/adventskalender",
-"https://toom.de/aktionen/toom-adventskalender",
-"https://xmas.caseking.de/",
-"https://www.theater-heilbronn.de/theater/adventskalender.php",
-"https://www.ao.de/life/adventskalender"+yyyy
+"https://www.blauer-engel.de/de/adventskalender", //down
+"https://toom.de/aktionen/toom-adventskalender", //down
+"https://www.funke.fun/gewinnspiele/hoerzu/adventskalender", //down Puzzle
+"https://www.toggoeltern.de/toggolino-adventskalender-tag-"+dd",
+"https://www.toggo.de/spiel/toggo-adventskalender", //down zeitaufwändig?
+"https://www.handyhase.de/?s=adventskalender", //down quiz
+"https://www.facebook.com/berndes.de/",
+"https://t3n.de/adventskalender/"+yyyy+"-tag-"+dd,
+"https://www.allround-pc.com/aktionen/"+yyyy+"/"+eval(yy-13)+"-adventskalendertuerchen",
+"https://adventskalender.lexware.de/calendars/lexware"+yyyy+"#/tag/"+dd,
+"https://teufel.de/newsletter/subscribe", //down newsletter
+"https://www.holidaycheck.de/aktion/adventsgewinnspiel", //down videoquiz
+"https://www.youtube.com/c/Sparmag/videos", //down YouTube-Video
+"https://www.weber.com/DE/de/wintergriller/advent-calendar-detail/?d="+dd,
+"https://www.auto-motor-und-sport.de/adventskalender-"+yyyy+"-teaser/", //down quiz 
+"https://mein.aral.de/adventskalender",
+"https://www.facebook.com/GigasetDeutschland/",
+"https://49032.online-adventskalender.de/app/view/christmasCalendar/49032?d=true&door="+dd+"&tab=participate", //down quiz
+"https://www.frau-im-leben.com/adventskalender/adventskalender-tag-"+dd,
+"https://cerealkillerz.org/?s=adventskalender",
+"https://www.tesa.com/de-de/buero-und-zuhause/adventskalender/adventskalender-tuerchen-"+dd,
+"https://sinalco-advent.de/",
+"https://www.eventim.de/campaign/eventim-adventskalender/tuerchen-"+dd,
+"https://guitar.de/aktuelles-tuerchen",
+"https://www.koch-mit.de/mach-mit/tuerchen-"+dd,
+"https://www.gamez.de/news/gamez-de-adventsgewinnspiel-2021-1-advent/", //jedo woche?
+"https://panasonic-adventskalender.app-specials.com/ak/panasonic-adventskalender/#kalender", //down spiel
+"https://www.casio-europe.com/de/weihnachten-"+yyyy, //down
+"https://www.aida.de/adventskalender.40427.html", //down quiz
+"https://mymagicmoments.de/adventskalender-"+yyyy+"-"+dd, //down quiz
+"https://www.soundcheck.de/aktuelles-tuerchen",
+"https://www.drumheads.de/aktuelles-tuerchen",
+"https://www.keys.de/aktuelles-tuerchen",
+"https://www.dasfotoportal.de/index.php?page=adventskalender&d=1", //serverfehler?
+"https://www.kopfhoerer.de/adventskalender/", //down quiz
+"https://www.tui.com/weihnachts-memory/", //down memory
+"https://www.geo.de/reisen/15110-adventskalender", //down puzzle
+"https://www.alcar-adventcalendar.com/",
+"https://www.fitforfun.de/adventskalender",
+"https://www.focus.de/shopping/adventskalender/",
+"https://www-staging.chip.de/events/deals-adventskalender",
+"https://interesse.telekom.de/adventskalender", //quiz mit Wartezeit..
 ];
 var div = document.createElement('div');
 print(calendars);
 
 document.write('<br><h4>Aufgaben/Zeitaufwändig</h4><br>');
 var tasks = [
-"Eins",
-"Zwei",
-"Drei",
+"https://adventskalender.sueddeutsche.de/",
+"https://www.adventure-treff.de/adventskalender2021",
+"https://holarse.de/search/node/Holarse%20Linuxspiele-Adventskalender%202021%20T%C3%BCrchen%20"+dd,
+
 ]
 print(tasks);
 
 document.write('<br><h4>Sonstiges</h4>');
 var etc = [
-"Eins",
-"Zwei",
-"Drei",
+"https://geizhals.de/?weihnachtsgewinnspiel=1",
+"https://gewinnspiel.tvmovie.de/",
+"http://www.kinonews.de/index.php/gewinnspiele.html",
+"https://www.teltarif.de/gewinnspiel/weihnachten-"+yyyy+".html",
+"https://www.selva.de/gewinnspiel/kalender", //Teilnahmebedinungen checken
+"https://www.otto.de/app/",
+"https://www.dealdoktor.de/user-deals/deals/gratisartikel-kostenlos/payback-app-xmas-kalender-2021/",
+"https://www.penny.de/payback/payback-adventskalender",
+"https://www.glitzerfrosch.de/",
+"https://digitalcourage.de/adventskalender/"+dd,
+"https://qiita.com/advent-calendar/"+yyyy+"/linux",
+"https://adventofcode.com/",
+
 ]
 print(etc);
 
